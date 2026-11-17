@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3b101d">
+  <title>For Umme Habiba — A Birthday Scrapbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+
+  <main>
+    <section class="welcome-screen" id="welcome">
+      <div class="welcome-top"><span>AN ENVELOPE FULL OF MEMORIES</span><span>EST. WITH LOVE · DEC 02</span></div>
+      <div class="welcome-content">
+        <div class="welcome-flower flower-left">✿</div>
+        <div class="welcome-flower flower-right">❀</div>
+        <p class="eyebrow">A little something, just for you</p>
+        <h1>To my favourite<br><em>birthday girl</em></h1>
+        <p class="welcome-name">Umme Habiba <span>♡</span></p>
+        <div class="envelope-wrap">
+          <div class="tiny-photo tiny-photo-one"><img src="assets/memory-01.jpg" alt="A favourite memory"></div>
+          <div class="tiny-photo tiny-photo-two"><img src="assets/memory-03.jpg" alt="A favourite memory"></div>
+          <div class="envelope" id="envelope" aria-label="Birthday envelope">
+            <div class="envelope-back"></div><div class="letter-peek">A note for you...</div>
+            <div class="envelope-flap"></div><div class="envelope-front"></div>
+            <div class="wax-seal">H<span>♥</span></div>
+          </div>
+        </div>
+        <p class="welcome-note">A tiny book of our moments, wrapped up with love.</p>
+        <button class="primary-btn" id="openBtn">Open your surprise <span>↗</span></button>
+      </div>
+      <div class="welcome-bottom"><span>TURN THE PAGE, KEEP THE MEMORY</span><span>♥ ♥ ♥</span></div>
+    </section>
+
+    <section class="scrapbook hidden" id="scrapbook">
+      <header class="book-header">
+        <a class="brand" href="#welcome" id="homeLink">H <span>♥</span></a>
+        <div class="book-title">THE HABIBA EDITION <small>A BOOK OF LITTLE FOREVERs</small></div>
+        <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫ <span>Music off</span></button>
+      </header>
+
+      <div class="book-layout">
+        <aside class="side-note">
+          <span class="side-stamp">SPECIAL<br>EDITION</span>
+          <p>Collected moments.<br>Endless affection.</p>
+          <span class="side-flower">✿</span>
+        </aside>
+
+        <div class="book">
+          <div class="book-spine"></div>
+          <div class="page" id="page">
+            <div class="page-number" id="pageNumber">01 / 05</div>
+
+            <article class="page-content active" data-page="0">
+              <div class="paper-label">A DAY MADE FOR YOU</div>
+              <div class="welcome-page-grid">
+                <div>
+                  <p class="script-kicker">Today, the world celebrates...</p>
+                  <h2>Twenty looks<br><em>beautiful</em> on you.</h2>
+                  <p class="body-copy">Happy 20th birthday, Umme Habiba. May this new chapter bring you soft mornings, brave dreams, unexpected joy and a thousand reasons to smile.</p>
+                  <p class="hand-sign">With all my love, <span>♥</span></p>
+                </div>
+                <figure class="polaroid hero-polaroid tilt-left">
+                  <img src="assets/memory-02.jpg" alt="Birthday girl and a special memory">
+                  <figcaption>One of my favourite views</figcaption>
+                </figure>
+              </div>
+              <div class="big-number">20<span>th</span></div>
+              <div class="corner-flower">✿</div>
+            </article>
+
+            <article class="page-content" data-page="1">
+              <div class="paper-label">CHAPTER ONE · LITTLE MOMENTS</div>
+              <h2 class="page-heading">Our <em>memories</em></h2>
+              <p class="page-subtitle">Some days become memories before we even know it.</p>
+              <div class="memory-grid">
+                <figure class="polaroid tilt-left"><img src="assets/memory-01.jpg" alt="Memory together"><figcaption>Just us, being us ♡</figcaption></figure>
+                <figure class="polaroid tilt-right"><img src="assets/memory-03.jpg" alt="A happy memory"><figcaption>A moment to keep</figcaption></figure>
+                <figure class="polaroid tilt-right"><img src="assets/memory-04.jpg" alt="A day outdoors"><figcaption>My favourite company</figcaption></figure>
+                <figure class="polaroid tilt-left"><img src="assets/memory-05.jpg" alt="A sweet memory"><figcaption>Little things, big feelings</figcaption></figure>
+              </div>
+              <span class="sticker sticker-heart">♥</span><span class="sticker sticker-star">✳</span>
+            </article>
+
+            <article class="page-content" data-page="2">
+              <div class="paper-label">CHAPTER TWO · THROUGH THE YEARS</div>
+              <h2 class="page-heading">A little <em>film roll</em></h2>
+              <p class="page-subtitle">Pause on any picture. Every frame has a story.</p>
+              <div class="film-frame">
+                <div class="film-holes"></div>
+                <div class="film-track" id="filmTrack">
+                  <img src="assets/memory-06.jpg" alt="Memory film 1">
+                  <img src="assets/memory-07.jpg" alt="Memory film 2">
+                  <img src="assets/memory-08.jpg" alt="Memory film 3">
+                  <img src="assets/memory-09.jpg" alt="Memory film 4">
+                  <img src="assets/memory-01.jpg" alt="Memory film 5">
+                </div>
+                <div class="film-holes"></div>
+              </div>
+              <div class="film-controls"><button id="filmBack" aria-label="Scroll film left">←</button><span>MEMORIES IN MOTION</span><button id="filmNext" aria-label="Scroll film right">→</button></div>
+              <p class="film-caption">If I could bottle up these moments, I would keep them close forever.</p>
+            </article>
+
+            <article class="page-content" data-page="3">
+              <div class="paper-label">A LETTER, JUST FOR YOU</div>
+              <div class="letter-sheet">
+                <div class="letter-date">December 2nd · For Habiba</div>
+                <h2>My dearest <em>Habiba,</em></h2>
+                <div class="letter-body">
+                  <p>Happy birthday to the girl who makes ordinary moments feel a little more special.</p>
+                  <p>I hope you never forget how precious you are. I hope you keep choosing your dreams, finding beauty in small things, and smiling that lovely smile of yours.</p>
+                  <p>May your twentieth year be gentle with your heart and generous with happiness. Wherever life takes us, I hope we keep collecting stories worth remembering.</p>
+                  <p>Today is all about you. You deserve every bit of love, laughter and magic coming your way.</p>
+                </div>
+                <p class="letter-sign">Always yours, <span>♡</span></p>
+                <span class="letter-flower">❀</span>
+              </div>
+            </article>
+
+            <article class="page-content final-page" data-page="4">
+              <div class="paper-label">THE LAST PAGE · NOT THE LAST MEMORY</div>
+              <div class="final-stars">✦　✧　♥　✧　✦</div>
+              <h2>Happy Birthday,<br><em>Umme Habiba</em></h2>
+              <p class="final-age">20 years of you. A lifetime of magic ahead.</p>
+              <figure class="polaroid final-photo tilt-right"><img src="assets/memory-09.jpg" alt="A special final memory"><figcaption>My favourite person, always</figcaption></figure>
+              <p class="final-message">May your wishes find their way to you. Keep shining, birthday girl. ♥</p>
+              <button class="cake-btn" id="cakeBtn">A little cake surprise <span>✧</span></button>
+            </article>
+          </div>
+          <div class="page-shadow"></div>
+        </div>
+      </div>
+
+      <footer class="book-footer">
+        <button class="nav-btn" id="prevBtn" disabled>← <span>Previous</span></button>
+        <div class="page-dots" id="pageDots"><button class="dot active" aria-label="Page 1"></button><button class="dot" aria-label="Page 2"></button><button class="dot" aria-label="Page 3"></button><button class="dot" aria-label="Page 4"></button><button class="dot" aria-label="Page 5"></button></div>
+        <span class="footer-note">MADE WITH LOVE, FOR YOU</span>
+        <button class="nav-btn" id="nextBtn"><span>Next page</span> →</button>
+      </footer>
+    </section>
+  </main>
+
+  <div class="cake-modal hidden" id="cakeModal" role="dialog" aria-modal="true" aria-label="Birthday cake surprise">
+    <button class="modal-close" id="closeCake" aria-label="Close">×</button>
+    <div class="cake-card">
+      <p class="eyebrow">MAKE A WISH, HABIBA</p>
+      <h2>One wish. A thousand possibilities.</h2>
+      <div class="cake-scene">
+        <div class="candle candle-one"><span class="flame"></span></div>
+        <div class="candle candle-two"><span class="flame"></span></div>
+        <div class="candle candle-three"><span class="flame"></span></div>
+        <div class="cake-top"></div><div class="cake-body"><span>20</span></div><div class="cake-plate"></div>
+      </div>
+      <p id="wishText">Tap the candles to make a wish ✨</p>
+      <button class="primary-btn" id="blowBtn">Blow out the candles</button>
+    </div>
+  </div>
+  <div class="lightbox hidden" id="lightbox"><button id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" alt="Expanded memory"></div>
+  <div class="toast" id="toast">A wish sent with love ♥</div>
+  <script src="script.js"></script>
+</body>
+</html>
